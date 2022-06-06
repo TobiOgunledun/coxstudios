@@ -10,10 +10,11 @@ var content = document.getElementById("content");
 var content2 = document.getElementById("content2");
 var returnText = document.getElementById("content_text");
 var returnImg = document.getElementById("content_img");
+var darkMode = document.getElementById("moon");
+var lightMode = document.getElementById("sun");
 
 
 function showMenu(){
-    // console.log("i work");
     navBar.style.right = 0;
     menuOpen.style.display = "none";
 }
@@ -37,6 +38,27 @@ function changeSlide2(){
     button2.style.display="none";
 
 }
+
+//CHANGE MODE
+var overlay = document.getElementById("overlay");
+darkMode.style.display = "none";
+
+ function light(){
+    document.body.style.background = "#fff";
+    document.body.style.color = "#000";
+    document.body.style.transition = "all 1s ease-in-out";
+    lightMode.style.display = "none";
+    darkMode.style.display = "block";
+ }
+ function dark(){
+    document.body.style.background = "#060c14";
+    document.body.style.color = "#fff";
+    document.body.style.transition = "all 1s ease-in-out";
+    navBar.style.color = "";
+    overlay.style.background = "";
+    lightMode.style.display = "block";
+    darkMode.style.display = "none";
+ }
 
 
 firstSlide = document.getElementsByClassName("image");

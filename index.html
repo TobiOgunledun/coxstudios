@@ -25,7 +25,7 @@
     <header class="home" id="home">
         <!-- <img src="./img/port1.png" alt="" id="home_bkg"> -->
         <video src="./img/vid1.mp4" id="home_bkg" loop muted autoplay></video>
-        <div class="overlay"></div>
+        <div class="overlay" id="overlay"></div>
 
         <div class="header_text">
             <p>
@@ -44,16 +44,19 @@
         
     </header>
     <nav>
+        <i class="far fa-moon mode" id="moon" onclick="dark()"></i>
+        <i class="fas fa-sun mode" id="sun" onclick="light()"></i>
+
         <i class="fas fa-bars" id="open" onclick="showMenu()"></i>
         <ul class="nav-menu" id="nav-menu">
             <i class="fas fa-times" id="close" onclick="hideMenu()"></i>
-            <li><a href="#home" onclick="showActive()" class="active">Home</a></li>
-            <li><a href="#service" onclick="showActive()">services</a></li>
-            <div class="logo" id="logo">
+            <li><a href="#home" onclick="showActive()" class="link">Home</a></li>
+            <li><a href="#service" onclick="showActive()" class="link">services</a></li>
+            <div class="logo link" id="logo">
                 <a href="index.html"><img src="img/myLogo.svg" alt=""></a>
             </div>
-            <li><a href="#portfolio" onclick="showActive()">portfolio</a></li>
-            <li><a href="#contact" onclick="showActive()">contact</a></li>
+            <li><a href="#portfolio" onclick="showActive()" class="link">portfolio</a></li>
+            <li><a href="#contact" onclick="showActive()" class="link">contact</a></li>
 
         </ul>
     </nav>
@@ -79,7 +82,7 @@
                 </div>
 
                 <div class="content_image" id="content_img">
-                    <img src="img/logo.png" alt="">
+                    <img src="img/Andicox4.png" alt="">
                 </div>
             </div>
             <button id="button" onclick="changeSlide()">Next</button>
@@ -225,7 +228,7 @@
                             <br><br>
                             &copy 2022. Andicox Studio. <br> <br>
                              Web Engineer: 
-                            <a href="https://tobiogunledun.github.io/portfolio/" style="color: #59cece;text-decoration:none">
+                            <a href="https://tobiogunledun.github.io/portfolio/" style="color: #fcdf03;text-decoration:none">
                                  Oluwatobi
                             </a> 
                         </p>
