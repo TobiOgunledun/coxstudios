@@ -217,7 +217,9 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     right: 0;
 }
 .next{
-    left: 1vw;
+    left: -13vw;
+    margin-left: 0;
+
 }
 
 

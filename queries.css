@@ -24,6 +24,8 @@
     .contact-text, .contact_form{
         width: 30em;
     }
+    .next{
+        left: -2vw;}
     .mode{ right:0;margin-right: 1em; top: 12%; opacity: .8;}
 }
 
