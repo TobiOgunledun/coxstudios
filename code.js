@@ -46,16 +46,15 @@ darkMode.style.display = "none";
  function light(){
     document.body.style.background = "#fff";
     document.body.style.color = "#000";
-    document.body.style.transition = "all 1s ease-in-out";
+    document.body.style.transition = "all .7s ease-in-out";
     lightMode.style.display = "none";
     darkMode.style.display = "block";
  }
  function dark(){
     document.body.style.background = "#060c14";
     document.body.style.color = "#fff";
-    document.body.style.transition = "all 1s ease-in-out";
+    document.body.style.transition = "all .7s ease-in-out";
     navBar.style.color = "";
-    overlay.style.background = "";
     lightMode.style.display = "block";
     darkMode.style.display = "none";
  }
