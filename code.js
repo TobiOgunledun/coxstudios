@@ -15,12 +15,14 @@ var lightMode = document.getElementById("sun");
 
 
 function showMenu(){
-    navBar.style.right = 0;
+    navBar.style.right = "1vh";
     menuOpen.style.display = "none";
+    menuClose.style.display = "block";
 }
 function hideMenu(){
     navBar.style.right = "";
     menuOpen.style.display = "";
+    menuClose.style.display = "";
 }
 content2.style.display="none"
 function changeSlide(){
@@ -44,7 +46,7 @@ var overlay = document.getElementById("overlay");
 darkMode.style.display = "none";
 
  function light(){
-    document.body.style.background = "#fff";
+    document.body.style.background = "#d1deef";
     document.body.style.color = "#000";
     document.body.style.transition = "all .7s ease-in-out";
     lightMode.style.display = "none";

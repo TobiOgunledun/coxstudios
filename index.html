@@ -45,11 +45,12 @@
     </header>
     <nav>
         <i class="far fa-moon mode" id="moon" onclick="dark()"></i>
-        <i class="fas fa-sun mode" id="sun" onclick="light()"></i>
+        <i class="fas fa-adjust mode" id="sun" onclick="light()"></i>
 
         <i class="fas fa-bars" id="open" onclick="showMenu()"></i>
+        <i class="fas fa-times" id="close" onclick="hideMenu()"></i>
         <ul class="nav-menu" id="nav-menu">
-            <i class="fas fa-times" id="close" onclick="hideMenu()"></i>
+           
             <li><a href="#home" onclick="showActive()" class="link">Home</a></li>
             <li><a href="#service" onclick="showActive()" class="link">services</a></li>
             <div class="logo link" id="logo">

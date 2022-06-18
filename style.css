@@ -24,22 +24,21 @@
     --large: 1.8em;
 }
 video{width: 100%;height: fit-content;object-fit: cover;}
-body{background:#060c14;font-family: 'Raleway', sans-serif;color: rgba(255, 255, 255, 0.836);overflow-x: hidden;
+body{display: grid; place-items: center;background:#060c14;font-family: 'Raleway', sans-serif;color: rgba(255, 255, 255, 0.836);overflow-x: hidden;
      outline: hidden;box-sizing: border-box;position: relative;font-family: 'Raleway', sans-serif;}
 img{ width: 100%;height: 100%;object-fit: cover;}
 section{ height:auto; min-height: fit-content;position: relative;padding:1em; overflow-x: hidden;}
 .container h1{color: #fcdf03;font-size: 2.5em;text-transform: uppercase;text-align: center;padding-bottom:1em;
     font-family: "Equinox Bold";
 }
-.container{width:85vw;
+.container{width:90vw;
     height: fit-content;
     background: transparent;
     backdrop-filter: blur(5px);
     border-radius: 1em;
     position:relative; 
-    /* transform: translateX(4vw); */
     padding: 2em 0;
-    margin: 0;
+    margin: 0 auto;
 }
 
 .logo{
@@ -59,17 +58,16 @@ header{color:#fff; width: 100%; height: 100vh;overflow-x: hidden;position: relat
 button{margin: 1em 0;padding: .8em 1em;text-transform: uppercase;background: rgb(252, 223, 3, 0.2);color: #fff;border-radius: .5em;border: 2px solid #fcdf03;cursor: pointer;transition:  .5s ease-in-out;}
 button:hover{background: #fcdf03;box-shadow: 2px 3px 15px rgba(252, 223, 3, 0.643);}
 nav{z-index: 100;position: relative;opacity: 1;}
-nav ul{position: fixed;top: 0;right: -100%;background: rgb(252, 223, 3, 0.3);overflow-y: hidden;box-shadow: 0 4px 15px rgb(252, 223, 3, 0.3);backdrop-filter: blur(5px);
-    width: 80vw;height: 100vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;transition: all 1s ease-in-out;}
+nav ul{border: 2px solid #fff;position: fixed;top: 10vh;right: -100%;background: rgba(0, 0, 0, 0.3);overflow-y: hidden;box-shadow: 0 4px 15px rgba(255, 255, 253, 0.3);backdrop-filter: blur(5px);
+    width: 50vw;height: 40vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;border-radius:1em;transition: all .5s ease-in-out;}
 nav ul li{list-style: none;padding-top: 1em; }
-nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--large);padding-right:  1em;color: #fff;position: relative;letter-spacing: 10px;font-family: "Equinox Regular";transition: color 1s ease;}
+nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--medium);color: #fff;position: relative;font-family: "Equinox Regular";transition: color 1s ease;}
 nav ul li a:hover{color:#fcdf03;}
 nav ul .logo{display: none;}
 nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: transparent;color: var(--main-color);text-align: center;width: 1.2em;height: 1.2em;cursor: pointer;border-radius: 50%;display: block;}
-#open{animation: menu 1s infinite;}
-#close{position: absolute; top: 0; right: 5%;color: #fcdf03;margin-top: 1em;padding: .15em .2em;background: rgba(0, 0, 0, 0.4);}
+#close{ display: none;}
 #back{position: absolute;left: 5%;bottom: 2%;color: #fcdf03;margin-top: 1em;padding: .15em .2em;background: rgba(0, 0, 0, 0.4);}
-.mode{ right:10%;margin-right: 1em; z-index: 100; opacity: .8;}
+.mode{ right:10%;margin-right: 1em; z-index: 100; opacity: .9;}
 
 
 
@@ -84,7 +82,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     cursor: pointer;
 }
 .content{padding: 1em auto;width: 95%;margin: 0 auto;display: flex;flex-wrap: wrap;justify-content: center;align-items: center;}
-.content_text{text-align: justify; background: rgba(0, 0, 0, 0.4);padding: 1em 2em;border-radius: 1em;margin-bottom: -5vh;width: 15em;z-index: 1;transition: all 2s ease; 
+.content_text{text-align: justify; padding: 1em 2em;border-radius: 1em;width: 18em;z-index: 1;transition: all 2s ease; 
     transform: translateX(-100vw);
     animation: text 1.5s forwards;
 }
@@ -100,7 +98,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
 .content2{padding: 1em auto;width: 95%;margin: 0 auto;}
 .services{display: flex;gap:1em;flex-wrap: wrap;justify-content: center;align-items: center;padding-bottom: 2em;margin:0 auto;}
 .service_head{text-align: center;margin-bottom: 2em;}
-.box{max-width: 15em;background: rgba(0, 0, 0, 0.4);padding: 1em;text-align: center;
+.box{max-width: 15em;background: rgba(0, 0, 0, 0.2);padding: 1em;text-align: center;
     transform: translateX(-100vw);
     animation: serve_box 1.5s forwards;
     animation-delay: .05s;
@@ -152,7 +150,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
 .contact_form input, .contact_form textarea{
     margin: .5em auto;
     width: 90%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     color: azure;
     font-size: 1.2em;
     font-weight: 200;
@@ -160,6 +158,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     border: 1px solid transparent;
     border-radius: 10px;
 }
+
 .contact_form input[type=submit]{
     width: 80%;
     transform: translateX(10%);
@@ -189,14 +188,14 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
 }
 /* .port{
     height: 70vh;
-    width: 90%;
+    width: 100%;
 } */
 .slider{
     /* transform: translateX(-30vw); */
     display:flex;
     gap: 1em;
-    width: 18em;
-    height: 70vh;
+    width: 20em;
+    height: 50vh;
 }
 .slider img{
     width: 100%;
