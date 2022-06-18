@@ -59,7 +59,7 @@ button{margin: 1em 0;padding: .8em 1em;text-transform: uppercase;background: rgb
 button:hover{background: #fcdf03;box-shadow: 2px 3px 15px rgba(252, 223, 3, 0.643);}
 nav{z-index: 100;position: relative;opacity: 1;}
 nav ul{border: 2px solid #fff;position: fixed;top: 10vh;right: -100%;background: rgba(0, 0, 0, 0.3);overflow-y: hidden;box-shadow: 0 4px 15px rgba(255, 255, 253, 0.3);backdrop-filter: blur(5px);
-    width: 50vw;height: 30vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;border-radius:1em;transition: all .5s ease-in-out;}
+    width: 50vw;height: 35vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;border-radius:1em;transition: all .5s ease-in-out;}
 nav ul li{list-style: none;padding-top: 1em; }
 nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--medium);color: #fff;position: relative;font-family: "Equinox Regular";transition: color 1s ease;}
 nav ul li a:hover{color:#fcdf03;}
