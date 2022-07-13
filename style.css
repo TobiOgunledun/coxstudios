@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
 
 
-/*@font-face {
-    font-family: "Equinox Bold";
-    src: url(/Equinox_Typeface_Dfonts.org/Webfonts/Equinox\ Bold.woff);
-}
-@font-face {
-    font-family: "Equinox Regular";
-    src: url(/Equinox_Typeface_Dfonts.org/Webfonts/Equinox\ Regular.woff);
-}*/
-
 *{
     padding: 0;
     margin: 0;
@@ -24,7 +15,7 @@
     --large: 1.8em;
 }
 video{width: 100%;height: fit-content;object-fit: cover;}
-body{display: grid; place-items: center;background:#060c14;font-family: 'Raleway', sans-serif;color: rgba(255, 255, 255, 0.836);overflow-x: hidden;
+body{background:#060c14;font-family: 'Raleway', sans-serif;color: rgba(255, 255, 255, 0.836);overflow-x: hidden;
      outline: hidden;box-sizing: border-box;position: relative;font-family: 'Raleway', sans-serif;}
 img{ width: 100%;height: 100%;object-fit: cover;}
 section{ height:auto; min-height: fit-content;position: relative;padding:1em; overflow-x: hidden;}
@@ -46,10 +37,10 @@ section{ height:auto; min-height: fit-content;position: relative;padding:1em; ov
     height:5em;
     cursor: pointer;
 }
-#home_bkg{position: absolute;top: 0;left: 0;width: 100vw;height:100vh;}
-.overlay{position: absolute;top: 0;left: 0;width: 100vw;height:100vh;background:#060c14;opacity: 0.4;transition: all .5s ease-in-out;}
-header{color:#fff; width: 100%; height: 100vh;overflow-x: hidden;position: relative; top: 0;left:0;}
-.header_text{position: absolute;top: 50%;left: 5vw;width: 100%;margin-bottom:1em;}
+#home_bkg{position: absolute;top: 0;left: 0;width: 100vw;height:100%;}
+.overlay{position: absolute;top: 0;left: 0;width: 100vw;height: 40em;background:#060c14;opacity: 0.4;transition: all .5s ease-in-out;}
+header{color:#fff; width: 100%; height: 40em;overflow-x: hidden;position: relative; top: 0;left:0;}
+.header_text{position: absolute;bottom: 5%;left: 5vw;width: 100%;margin-bottom:1em;}
 .header_text p:first-child{text-transform: uppercase;font-size: var(--normal);padding-bottom: .6em;letter-spacing: 1em;opacity: .9;}
 .header_text p{width: 90%;font-size: var(--normal);padding: .6em 0;line-height: 120%;}
 .header_text h1{color: #fcdf03;font-size: 3em;text-transform: uppercase;
@@ -59,9 +50,9 @@ button{margin: 1em 0;padding: .8em 1em;text-transform: uppercase;background: rgb
 button:hover{background: #fcdf03;box-shadow: 2px 3px 15px rgba(252, 223, 3, 0.643);}
 nav{z-index: 100;position: relative;opacity: 1;}
 nav ul{border: 2px solid #fff;position: fixed;top: 10vh;right: -100%;background: rgba(0, 0, 0, 0.3);overflow-y: hidden;box-shadow: 0 4px 15px rgba(255, 255, 253, 0.3);backdrop-filter: blur(5px);
-    width: 50vw;height: 35vh;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;border-radius:1em;transition: all .5s ease-in-out;}
-nav ul li{list-style: none;padding-top: 1em; }
-nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--medium);color: #fff;position: relative;font-family: "Equinox Regular";transition: color 1s ease;}
+    width: 50vw;height: 13em;display: flex;flex-direction: column;gap: 1em;justify-content: center;align-items: center;border-radius:1em;transition: all .5s ease-in-out;}
+nav ul li{list-style: none;padding-top: .5em; }
+nav ul li a{text-decoration: none;text-transform: uppercase;font-size: var(--normal);color: #fff;position: relative;font-family: "Equinox Regular";transition: color 1s ease;}
 nav ul li a:hover{color:#fcdf03;}
 nav ul .logo{display: none;}
 nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: transparent;color: var(--main-color);text-align: center;width: 1.2em;height: 1.2em;cursor: pointer;border-radius: 50%;display: block;}
@@ -111,11 +102,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
 
 
 
-.contact_container{ display: flex;flex-wrap:wrap;justify-content: center;align-items: flex-start;margin:5vh auto;gap:2em;
-    /* transform:translateY(-200vh);
-    animation: page2 2s forwards;
-    animation-delay: 3s; */
-  }
+.contact_container{ display: flex;flex-wrap:wrap;justify-content: center;align-items: flex-start;margin:5vh auto;gap:2em;  }
 
 .contact-text{
     min-width: 15em;
@@ -186,12 +173,8 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     width: none;
     color: #000;
 }
-/* .port{
-    height: 70vh;
-    width: 100%;
-} */
 .slider{
-    /* transform: translateX(-30vw); */
+    
     display:flex;
     gap: 1em;
     width: 20em;
