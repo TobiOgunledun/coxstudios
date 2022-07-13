@@ -42,7 +42,7 @@ section{position: relative;padding:1em; overflow-x: hidden;}
 header{color:#fff; width: 100%; height: 100vh;overflow-x: hidden;position: relative; top: 0;left:0;}
 .header_text{position: absolute;bottom: 15%;left: 5vw;width: 100%;margin-bottom:1em;}
 .header_text p:first-child{text-transform: uppercase;font-size: var(--normal);padding-bottom: .6em;letter-spacing: 1em;opacity: .9;}
-.header_text p{width: 90%;font-size: var(--normal);padding: .6em 0;line-height: 120%;}
+.header_text p{width: 70%;font-size: var(--normal);padding: .6em 0;line-height: 120%;}
 .header_text h1{color: #fcdf03;font-size: 3em;text-transform: uppercase;
     /* transform: scale(0) translateX(-200vw); */
     font-family: "Equinox Bold";animation: third 5s forwards alternate;}
@@ -77,7 +77,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     transform: translateX(-100vw);
     animation: text 1.5s forwards;
 }
-.content_image{box-shadow: 0 8px 20px #1b1b1b;border-radius: .5em;max-width: 40em;height:auto;text-align: center;transition: all 2s ease;
+.content_image{box-shadow: 0 8px 20px #1b1b1b;border-radius: .5em;width: 30em;height:auto;text-align: center;transition: all 2s ease;
     transform: translateX(100vw);
     animation: text_img 1.5s forwards;
 }
@@ -86,10 +86,10 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
 }
 .content_image:hover{z-index: 2;transform: scale(1.02);}
 
-.content2{padding: 1em auto;width: 95%;margin: 0 auto;}
-.services{display: flex;gap:1em;flex-wrap: wrap;justify-content: center;align-items: center;padding-bottom: 2em;margin:0 auto;}
+.content2{padding: 1em auto;width: 95%;margin: 0 auto;transform: translateX(5%);}
+.services{width: 100%; display: flex;gap:1em;flex-wrap: wrap;justify-content: center;align-items: center;padding-bottom: 2em;margin:0 auto;}
 .service_head{text-align: center;margin-bottom: 2em;}
-.box{max-width: 15em;background: rgba(0, 0, 0, 0.2);padding: 1em;text-align: center;
+.box{width: 15em;background: rgba(0, 0, 0, 0.2);padding: 1em;text-align: center;
     transform: translateX(-100vw);
     animation: serve_box 1.5s forwards;
     animation-delay: .05s;
@@ -131,10 +131,10 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     box-shadow: 0 5px 15px rgba(89, 206, 206, 0.2);
 }
 .contact_form{
-    min-width: 15em;
+    width: 15em;
     padding: 1em;
 }
-.contact_form input, .contact_form textarea{
+.contact_form input, .contact_form textarea,.testimony form input, .testimony form textarea{
     margin: .5em auto;
     width: 90%;
     background: rgba(0, 0, 0, 0.2);
@@ -146,14 +146,14 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     border-radius: 10px;
 }
 
-.contact_form input[type=submit]{
+.contact_form input[type=submit], .testimony form input[type=submit]{
     width: 80%;
-    transform: translateX(10%);
+    /* transform: translateX(10%); */
     background: #fcdf03;
     transition: all .6s ease;
     cursor: pointer;
 }
-.contact_form input[type=submit]:hover{
+.contact_form input[type=submit]:hover, .testimony form input[type=submit]:hover{
     box-shadow: 0 5px 15px rgb(252, 223, 3, 0.6);
 }
 .contact_form p{
@@ -178,7 +178,7 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     display:flex;
     gap: 1em;
     width: 20em;
-    height: 50vh;
+    height: 25em;
 }
 .slider img{
     width: 100%;
@@ -202,6 +202,15 @@ nav i{position: fixed;top: 4%;right: 5%;font-size: var(--large);background: tran
     left: -2em;
     margin-left: 0;
 
+}
+.testimony form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
 }
 
 

@@ -3,7 +3,7 @@
     nav{position: absolute;top: 0;left: 5vw;width: 90vw;height: auto;margin: 0 auto;border-radius: .8em;padding: 0 1em;animation:  nav .8s forwards;animation-delay: 4s;}
     nav ul{border: none;position: relative;top: 0;right: 1.6%;width: 100%;height: auto;display: flex;flex-direction: row;justify-content: space-between;align-items: center;background: none;
         backdrop-filter: none;box-shadow: none;padding: 0 1em; margin: 0 auto;transition: none;}
-    nav ul .logo{display: block;}
+    nav ul .logo{top:0; display: block;}
     nav ul li a{font-size: var(--medium);padding: 0;color: #fff;}
     nav ul li a.active::before{background: #000;width: 85%;}
     #open, #close, #back{display: none;}
@@ -40,7 +40,7 @@
     nav{position: absolute;top: 0;left: 5vw;width: 90vw;height: auto;margin: 0 auto;border-radius: .8em;padding: 0 1em;animation:  nav .8s forwards;animation-delay: 4s;}
     nav ul{border: none;position: relative;top: 0;right: 1.6%;width: 100%;height: auto;display: flex;flex-direction: row;justify-content: space-between;align-items: center;background: none;
         backdrop-filter: none;box-shadow: none;padding: 0 1em; margin: 0 auto;transition: none;}
-    nav ul .logo{display: block;}
+        nav ul .logo{top:0; display: block;}
     nav ul li a{font-size: var(--normal);padding: 0;color: #fff;}
     nav ul li a.active::before{background: #000;width: 85%;}
     #open, #close, #back{display: none;}
