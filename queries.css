@@ -7,6 +7,9 @@
     nav ul li a{font-size: var(--medium);padding: 0;color: #fff;}
     nav ul li a.active::before{background: #000;width: 85%;}
     #open, #close, #back{display: none;}
+    header, .overlay{
+        height: 40em;
+    }
     .header_text{
         top:30%;left:10vw;
         width: 50%;
@@ -14,7 +17,7 @@
     /* .header_text h1{
         font-size: 3em;
     } */
-    section{min-height:auto;max-height: 100vh; outline: hidden;}
+    section{outline: hidden;}
     section.contact{overflow: hidden}
     .container{width:90vw; margin-left:-1vw; }
     .content_text{margin-bottom: 0;width: 22em;}
@@ -41,10 +44,13 @@
     nav ul li a{font-size: var(--normal);padding: 0;color: #fff;}
     nav ul li a.active::before{background: #000;width: 85%;}
     #open, #close, #back{display: none;}
+    header, .overlay{
+        height: 40em;
+    }
     .header_text{
         top:50%;left:10vw;
     }
-    section{min-height:auto;max-height: 100vh; outline: hidden;}
+    section{ outline: hidden;}
     .content_text{margin-bottom: -10vh;width: 20em;}
     .contact-text h1{
         font-size: 3em;}
